@@ -1,0 +1,19 @@
+.primary-button {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: .7rem 1.5rem;
+  background-color: #45d2b5;
+}
+
+.learn-more-button {
+  color: #26dcc4;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.3px;
+}

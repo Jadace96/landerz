@@ -1,0 +1,112 @@
+#header {
+  width: 91%;
+  z-index: 10;
+  height: 3rem;
+  display: flex;
+  position: fixed;
+  padding: 0 1rem;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+#landerzTitle {
+  font-weight: normal;
+  font-family: Flaticon;
+}
+
+#navigation {
+  position: relative;
+}
+
+#menuToggle {
+  user-select: none;
+  position: relative;
+  padding-top: 0.3rem;
+  -webkit-user-select: none;
+}
+
+#menuToggle input {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  z-index: 1;
+  width: 20px;
+  height: 2px;
+  display: block;
+  border-radius: 3px;
+  background: black;
+  transform-origin: 1px 0;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  background: #232323;
+  transform: rotate(50deg) translate(-2.6px, -4px);
+}
+
+#menuToggle span:nth-last-child(3) {
+  margin: 0.2rem 0;
+}
+ 
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;  
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-50deg) translate(0, -1px);
+}
+
+#menu {
+  right: 0;
+  width: 70vw;  
+  opacity: .8;
+  height: 100vh;
+  padding-top: 0;
+  position: absolute;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100vw, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}

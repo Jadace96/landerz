@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./styles/globalStyles.css">
+  <link rel="stylesheet" type="text/css" href="./styles/header.css">
+  <link rel="stylesheet" type="text/css" href="./styles/landing-section.css">
+  <link rel="stylesheet" type="text/css" href="./styles/features.css">
+  <link rel="stylesheet" type="text/css" href="./styles/buttons.css">
+  <link rel="stylesheet" type="text/css" href="./styles/about-us.css">
+  <link rel="stylesheet" type="text/css" href="./styles/testimonials.css">
+  <link rel="stylesheet" type="text/css" href="./styles/carousel.css">
+
+  <title>Landerz</title>
+</head>
+
+<body>
+  <div id="appContainer">
+    <header id="header">
+      <h1 id="landerzTitle">Landerz</h1>
+      <nav id="navigation" role="navigation">
+        <div id="menuToggle" class="hide-tablet">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#landingSection">
+              <li>Home</li>
+            </a>
+            <a href="#featuresSection">
+              <li>Features</li>
+            </a>
+            <a href="#aboutUsSection">
+              <li>About Us</li>
+            </a>
+            <a href="#testimonials">
+              <li>Testimonials</li>
+            </a>
+            <a href="#">
+              <li>Blog</li>
+            </a>
+            <a href="#contact">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="landingSection">
+      <img id="landingImg" src="./assets/images/landing_1.png" alt="">
+      <div id="landingInfoContainer">
+        <h1 id="landingInfoTitle">Grow Your Business Faster</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis
+          consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis
+          optio eveniet saepe. Et.</p>
+      </div>
+      <button class="primary-button">Get Started</button>
+    </section>
+    <section id="featuresSection">
+      <h2 class="section-bold-title">Features</h2>
+      <feature-item></feature-item>
+    </section>
+    <section id="aboutUsSection">
+      <h2 class="section-bold-title">About Us</h2>
+      <img class="about-us-img" src="./assets/images/about_1.jpg">
+      <div id="aboutUsContainer">
+        <h3 class="feature-item-title">Create interactive prototypes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem, provident beatae harum quasi quod
+          non consequuntur, architecto autem neque sed rerum sequi cum et quam dicta. Suscipit, quod molestias!</p>
+        <button class="primary-button">Learn More</button>
+      </div>
+    </section>
+    <section id="testimonials">
+      <h2 class="section-bold-title">Testimonials</h2>
+      <!-- <img class="about-us-img" src="./assets/images/about_1.jpg"> -->
+    </section>
+  </div>
+
+  <script src="./api/users.js"></script>
+  <script src="./scripts/features.js"></script>
+  <script src="./scripts/carousel.js"></script>
+
+
+  <script>
+    /***** fetchUsersData is located in api/users.js *****/
+    /***** renderCarousel is located in scrips/carousel *****/
+    fetchUsersData(renderCarousel);  
+  </script>
+
+</body>
+
+</html>

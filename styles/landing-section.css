@@ -1,0 +1,16 @@
+#landingSection {
+  padding: 1rem;  
+  margin-top: 12.5%;
+  background-color: #fff;
+}
+
+#landingImg {
+  width: 100%;
+  height: auto;
+}
+
+#landingInfoTitle {
+  padding: 1rem 0 0.5rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
