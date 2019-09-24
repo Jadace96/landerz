@@ -1,0 +1,19 @@
+#blog ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#blog ul li {
+  color: #8b9298;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: lighter;
+  letter-spacing: 0.3px;
+}
+
+#blog ul li:before {
+  content: "✓";
+  color: #8ac540;
+  margin-right: 0.7rem;
+}

@@ -13,6 +13,10 @@
   <link rel="stylesheet" type="text/css" href="./styles/about-us.css">
   <link rel="stylesheet" type="text/css" href="./styles/testimonials.css">
   <link rel="stylesheet" type="text/css" href="./styles/carousel.css">
+  <link rel="stylesheet" type="text/css" href="./styles/contact-form.css">
+  <link rel="stylesheet" type="text/css" href="./styles/body-container.css">
+  <link rel="stylesheet" type="text/css" href="./styles/blog-section.css">
+
 
   <title>Landerz</title>
 </head>
@@ -22,73 +26,96 @@
     <header id="header">
       <h1 id="landerzTitle">Landerz</h1>
       <nav id="navigation" role="navigation">
-        <div id="menuToggle" class="hide-tablet">
+        <div id="menuToggle" >
           <input type="checkbox" />
           <span></span>
           <span></span>
           <span></span>
           <ul id="menu">
-            <a href="#landingSection">
+            <a href="#landing">
               <li>Home</li>
             </a>
-            <a href="#featuresSection">
+            <a href="#features">
               <li>Features</li>
             </a>
-            <a href="#aboutUsSection">
+            <a href="#blog">
+              <li>Blog</li>
+            </a>
+            <a href="#aboutUs">
               <li>About Us</li>
             </a>
             <a href="#testimonials">
               <li>Testimonials</li>
             </a>
-            <a href="#">
-              <li>Blog</li>
-            </a>
-            <a href="#contact">
-              <li>Contact</li>
+            <a href="#getInTouch">
+              <li>Get In Touch</li>
             </a>
           </ul>
         </div>
       </nav>
     </header>
-    <section id="landingSection">
-      <img id="landingImg" src="./assets/images/landing_1.png" alt="">
-      <div id="landingInfoContainer">
-        <h1 id="landingInfoTitle">Grow Your Business Faster</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis
-          consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis
-          optio eveniet saepe. Et.</p>
-      </div>
-      <button class="primary-button">Get Started</button>
-    </section>
-    <section id="featuresSection">
-      <h2 class="section-bold-title">Features</h2>
-      <feature-item></feature-item>
-    </section>
-    <section id="aboutUsSection">
-      <h2 class="section-bold-title">About Us</h2>
-      <img class="about-us-img" src="./assets/images/about_1.jpg">
-      <div id="aboutUsContainer">
-        <h3 class="feature-item-title">Create interactive prototypes</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem, provident beatae harum quasi quod
-          non consequuntur, architecto autem neque sed rerum sequi cum et quam dicta. Suscipit, quod molestias!</p>
-        <button class="primary-button">Learn More</button>
-      </div>
-    </section>
-    <section id="testimonials">
-      <h2 class="section-bold-title">Testimonials</h2>
-      <!-- <img class="about-us-img" src="./assets/images/about_1.jpg"> -->
-    </section>
+    <div id="bodyContainer">
+      <section id="landing">
+        <img id="landingImg" src="./assets/images/landing_1.png" alt="">
+        <div id="landingInfoContainer">
+          <h1 id="landingInfoTitle">Grow Your Business Faster</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis
+            consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis
+            optio eveniet saepe. Et.</p>
+        </div>
+        <button class="primary-button">Get Started</button>
+      </section>
+      <section id="features">
+        <h2 class="section-bold-title">Features</h2>
+        <feature-item></feature-item>
+      </section>
+      <section id="blog">
+        <h2 class="section-bold-title">Create interactive prototypes</h2>
+        <img class="about-us-img" src="./assets/images/do_ui_kit_download_cta_floating_devices-2x.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem, provident beatae harum quasi
+          quod non consequuntur, architecto autem neque sed rerum sequi cum et quam dicta. Suscipit, quod molestias!</p>
+        <ul>
+          <li>Adipisici excepturi aliquam</li>
+          <li>Deleniti labore reiciendis</li>
+        </ul>
+      </section>
+      <section id="aboutUs">
+        <h2 class="section-bold-title">About Us</h2>
+        <img class="about-us-img" src="./assets/images/about_1.jpg">
+        <div id="aboutUsContainer">
+          <h3 class="feature-item-title">Create interactive prototypes</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem, provident beatae harum quasi
+            quod
+            non consequuntur, architecto autem neque sed rerum sequi cum et quam dicta. Suscipit, quod molestias!</p>
+          <button class="primary-button">Learn More</button>
+        </div>
+      </section>
+      <section id="testimonials">
+        <h2 class="section-bold-title">Testimonials</h2>
+      </section>
+      <section id="getInTouch">
+        <h2 class="section-bold-title">Get In Touch</h2>
+        <contact-form></contact-form>
+      </section>
+    </div>
   </div>
 
+  <!-- Scripts to APIs -->
   <script src="./api/users.js"></script>
+  <script src="./api/form.js"></script>
+  <!-- Scripts to APIs -->
+
+  <!-- Necessary scripts to load in the app  -->
   <script src="./scripts/features.js"></script>
   <script src="./scripts/carousel.js"></script>
-
+  <script src="./scripts/contact-form.js"></script>
+  <!-- Necessary scripts to load in the app  -->
 
   <script>
     /***** fetchUsersData is located in api/users.js *****/
     /***** renderCarousel is located in scrips/carousel *****/
-    fetchUsersData(renderCarousel);  
+    fetchUsersData(renderCarousel);
+    // sendEmail()
   </script>
 
 </body>

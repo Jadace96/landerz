@@ -10,7 +10,6 @@
   font-style: normal;
 }
 
-
 html,
 body,
 div,
@@ -33,7 +32,9 @@ section {
 
 body {
   line-height: 1;
-  font-family: 'Flaticon', sans-serif;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  font-family: "Flaticon", sans-serif;
 }
 
 input[type="search"] {
@@ -54,16 +55,19 @@ a:focus {
   outline: thin dotted;
 }
 
+a,
 a:active,
 a:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 #appContainer {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: auto;
-  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 p {
@@ -76,7 +80,7 @@ p {
 }
 
 .section-bold-title {
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   margin: 1rem 0 1.5rem;
 }
 
@@ -87,12 +91,19 @@ section {
 }
 
 @media (min-width: 1024px) {
-  .hide-tablet {
-    display: none
+  /* .hide-tablet {
+    display: none !important;
   }
+  .show-tablet {
+    display: flex !important;
+  } */
   p {
     text-align: center;
-  }  
+  }
+
+  #appContainer {
+    max-width: 50rem;
+  }
 }
 
 @media (max-width: 1024px) {

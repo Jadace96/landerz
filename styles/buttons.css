@@ -10,7 +10,10 @@
   background-color: #45d2b5;
 }
 
-.learn-more-button {
+.learn-more-text-button {
+  border: none;
+  outline: none;
+  background: none;
   color: #26dcc4;
   margin: 1.5rem 0;
   font-size: 1.1rem;

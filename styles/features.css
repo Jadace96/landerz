@@ -5,14 +5,13 @@
 
 .feature-item-container {
   display: flex;
+  padding: 1rem;
   margin-top: 1rem;
   align-items: center;
-  flex-direction: column;
-
-  padding: 1rem;
   border-radius: 0.4rem;
+  flex-direction: column;
   border: 1px solid #fff;
-  background-color: white;
+  background-color: #fff;
 }
 
 .feature-item-title {

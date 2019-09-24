@@ -1,34 +1,33 @@
 #header {
-  width: 91%;
-  z-index: 10;
-  height: 3rem;
+  z-index: 1;
+  width: 100%;
   display: flex;
+  height: 4.5rem;
   position: fixed;
-  padding: 0 1rem;
   align-items: center;
   background-color: #fff;
   justify-content: space-between;
 }
 
 #landerzTitle {
+  padding-left: 1rem;
   font-weight: normal;
   font-family: Flaticon;
 }
 
 #navigation {
-  position: relative;
+  padding-right: 0.5rem;
 }
 
 #menuToggle {
   user-select: none;
-  position: relative;
   padding-top: 0.3rem;
   -webkit-user-select: none;
 }
 
 #menuToggle input {
-  width: 100%;
-  height: 100%;
+  max-width: 1rem;
+  max-height: 1rem;
   cursor: pointer;
   position: absolute;
 
@@ -63,50 +62,108 @@
 #menuToggle input:checked ~ span {
   opacity: 1;
   background: #232323;
-  transform: rotate(50deg) translate(-2.6px, -4px);
+  transform: rotate(50deg) translate(-2px, -4px);
 }
 
 #menuToggle span:nth-last-child(3) {
   margin: 0.2rem 0;
 }
- 
-/*
- * But let's hide the middle one.
- */
+
 #menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;  
-  transform: rotate(0deg) scale(0.2, 0.2);
+  opacity: 0;
+  transform: rotate(0deg) scale(0.5, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-50deg) translate(0, -1px);
 }
 
 #menu {
-  right: 0;
-  width: 70vw;  
-  opacity: .8;
+  width: 100%;
+  opacity: 0.8;
+  left: -200vw;
   height: 100vh;
-  padding-top: 0;
+  overflow: auto;
+  transition: 0.5s;
   position: absolute;
+  padding-top: 1.5rem;
   background: #ededed;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-
-  transform-origin: 0% 0%;
-  transform: translate(-100vw, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
+  color: black;
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 #menuToggle input:checked ~ ul {
-  transform: none;
+  transition: 0.5s;
+  left: 0;
+}
+
+/* #navBar,
+#navBarMenu {
+  width: 100%;
+  display: none;
+}
+
+#navBarMenu {
+  padding: 0;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+} */
+
+@media (min-width: 1024px) {
+  #header {
+    width: 100%;
+    height: 4.5rem;
+    position: fixed;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  #landerzTitle {
+    bottom: -2rem;
+    padding-left: 0;
+    position: absolute;
+  }
+
+  #navigation {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: initial;
+    background: transparent;
+    justify-content: space-between;
+  }
+
+  #menu li {
+    color: black;
+    padding: 10px 0;
+    font-size: 1.3rem;
+  }
+
+  #menuToggle {
+    width: 100%;
+    padding: 0;
+  }
+
+  #menuToggle input,
+  #menuToggle span {
+    display: none;
+  }
 }

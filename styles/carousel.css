@@ -5,13 +5,13 @@
   overflow: hidden;
   position: relative;
   color: transparent;
-  background-color: #fff;
   scroll-behavior: smooth;
+  background-color: #fff;
 }
 .carousel-item-container {
-  margin: 1rem;
+  margin: 1rem 0;
   display: flex;
-  min-width: 91%;  
+  min-width: 100%;
   align-items: center;
   flex-direction: column;
 }
@@ -33,6 +33,7 @@
 }
 
 .carousel-paragraph {
+  width: 90%;
   margin: 1rem 0;
   font-style: italic;
   text-align: center;
@@ -48,9 +49,13 @@
 
 .circular-pager-item {
   margin: 1rem;
-  width: 0.65rem;
-  height: 0.65rem;
+  width: 0.75rem;
+  height: 0.75rem;
   cursor: pointer;
-  border-radius: 1rem;  
+  border-radius: 1rem;
   background-color: #dde2e6;
+}
+
+.active-pager {
+  background-color: #45d2b5;
 }

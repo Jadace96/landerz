@@ -10,9 +10,7 @@ const userPhoto = {
   }
 };
 
-const getUserImgById = userId => {
-  return userPhoto[userId].src;
-};
+const getUserPhotoById = userId => userPhoto[userId].src;
 
 const getCarouselData = ({
   usersData,
@@ -27,7 +25,7 @@ const getCarouselData = ({
         carouselData[index] = {
           ...carouselData[index],
           post: body,
-          picture: getUserImgById(userId)
+          picture: getUserPhotoById(userId)
         };
       }
     });
@@ -36,29 +34,41 @@ const getCarouselData = ({
   return carouselData;
 };
 
+onClickPager = pagerIndex => {
+  const pagerElements = document.getElementsByClassName("circular-pager-item");
+  Object.values(pagerElements).forEach(element => {
+    element.classList.remove("active-pager");
+  });
+  pagerElements[pagerIndex - 1].classList.add("active-pager");
+};
+
 renderPager = carouselItems => {
   const circularPagerItems = carouselItems.map(
-    ({ id }) => `<a href="#slide${id}" class="circular-pager-item"></a>`
+    ({ id }) =>
+      `<a onclick="onClickPager(${id})" href="#slide${id}" 
+        class="circular-pager-item ${id === 1 && "active-pager"}">
+      </a>`
   );
-  return `<div class="carousel-pager-container">${circularPagerItems}</div>`;
+  return `
+    <div class="carousel-pager-container">
+      ${circularPagerItems.join(" ")}
+    </div>`;
 };
 
 const renderCarousel = props => {
   const carouselData = getCarouselData({ ...props, quantityElementsToShow: 3 });
-  console.log(carouselData);
   const testimonialsTag = document.querySelector("#testimonials");
   const carouselItems = carouselData.map(
     ({ name, post, picture, id }) => `
-      <div id="#slide${id}" class="carousel-item-container">
+      <div id="slide${id}" class="carousel-item-container">
         <img class="carousel-item-img" src=${picture}>
         <p class="carousel-paragraph">“${post}”</p>
         <h5 class="carousel-item-title">${name}</h5>
       </div>`
   );
-  // console.log(carouselItems);
   testimonialsTag.innerHTML += `
   <div id="carouselContainer">
-    ${carouselItems}
+    ${carouselItems.join(" ")}
   </div>
   ${renderPager(carouselData)}
   `;

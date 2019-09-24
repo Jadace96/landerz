@@ -46,7 +46,7 @@ class FeatureItem extends HTMLElement {
             <img class="feature-item-img" src=${src}>
             <h3 class="feature-item-title">${title}</h3>      
             <p>${paragraph}</p>
-            <button class="learn-more-button"> Learn more </button>
+            <button class="learn-more-text-button"> Learn more </button>
           </div>
         `)
     );
