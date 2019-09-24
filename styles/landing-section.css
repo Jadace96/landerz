@@ -14,3 +14,27 @@
   font-size: 1.8rem;
   line-height: 2.6rem;
 }
+
+#landingInfoContainer p {
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  #landing {   
+    flex-wrap: nowrap; 
+    padding: 4rem 0 4rem 1rem;
+    flex-direction: row-reverse;
+  }
+
+  #landingImg {    
+    max-width: 60% !important
+  }
+
+  #landingInfoContainer {
+    display: flex;
+    padding: 0 6rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}

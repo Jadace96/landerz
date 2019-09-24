@@ -72,7 +72,7 @@ a:hover {
 
 p {
   color: #8b9298;
-  text-align: left;
+  text-align: center;
   font-size: 0.9rem;
   line-height: 1.4rem;
   font-weight: lighter;
@@ -85,25 +85,33 @@ p {
 }
 
 section {
-  padding: 0.5rem;
+  padding: 1rem;
   max-width: 100%;
   margin-top: 0.2rem;
 }
 
 @media (min-width: 1024px) {
-  /* .hide-tablet {
-    display: none !important;
-  }
-  .show-tablet {
-    display: flex !important;
-  } */
   p {
+    text-align: left;
+  }
+
+  img {
+    max-width: 50% !important;
+  }
+
+  section  {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-bold-title {
+    width: 100%;
     text-align: center;
   }
 
-  #appContainer {
-    max-width: 50rem;
-  }
 }
 
 @media (max-width: 1024px) {

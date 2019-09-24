@@ -1,3 +1,8 @@
+#blog {
+  position: relative;
+  background-color: #fff;
+}
+
 #blog ul {
   padding-left: 0;
   list-style: none;
@@ -16,4 +21,18 @@
   content: "✓";
   color: #8ac540;
   margin-right: 0.7rem;
+}
+
+
+@media (min-width: 1024px) {
+  #blog .section-bold-title {
+    top: 20%;
+    left: 40%;
+    width: 50%;
+    position: absolute;
+  }
+
+  #blogTextInfoContent  {
+    max-width: 50%;
+  }
 }

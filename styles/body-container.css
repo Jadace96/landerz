@@ -1,6 +1,6 @@
 #bodyContainer {  
   overflow: auto;
-  /* margin: 4.5rem auto 0; */
+  margin: 4.5rem auto 0;
   scroll-behavior: smooth; 
   height: calc(100vh - 3.5rem);
 }

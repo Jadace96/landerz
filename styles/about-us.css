@@ -1,2 +1,20 @@
-.about-us-img {
+#aboutUs .feature-item-title {
+  text-align: center;
+}
+
+#aboutUs .section-bold-title {
+  margin-bottom: 2.2rem;
+}
+
+
+#aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  #aboutUsContainer {
+    max-width: 50%;
+  }
 }

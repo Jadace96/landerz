@@ -3,37 +3,37 @@ const featureItemsData = [
     id: "businessConsulting",
     title: "Business Consulting",
     src: "../assets/images/bussness.png",
-    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis optio eveniet saepe. Et.`
+    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit.`
   },
   {
     id: "marketAnalysis",
     title: "Market Analysis",
     src: "../assets/images/market_analysis.png",
-    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis optio eveniet saepe. Et.`
+    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit.`
   },
   {
     id: "userMonitor",
     title: "User Monitor",
     src: "../assets/images/user_monitor.png",
-    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis optio eveniet saepe. Et.`
+    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit.`
   },
   {
     id: "insuranceConsulting",
     title: "Insurance Consulting",
     src: "../assets/images/insurance_consulting.png",
-    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis optio eveniet saepe. Et.`
+    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit.`
   },
   {
     id: "customerSatistified",
     title: "Customer Satistified",
     src: "../assets/images/customer_satistified.png",
-    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis optio eveniet saepe. Et.`
+    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit.`
   },
   {
     id: "plug&Play",
     title: "Plug & Play",
     src: "../assets/images/plug_and_play.png",
-    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit culpa quisquam, debitis consectetur quod corrupti voluptate quibusdam voluptas laborum quo excepturi quos architecto ad, reiciendis optio eveniet saepe. Et.`
+    paragraph: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugit.`
   }
 ];
 

@@ -15,8 +15,13 @@
   font-family: Flaticon;
 }
 
+#landerzTitle::after {
+  content: ".";
+  color: #45d2b5;
+}
+
 #navigation {
-  padding-right: 0.5rem;
+  padding-right: 1rem;
 }
 
 #menuToggle {
@@ -102,19 +107,6 @@
   left: 0;
 }
 
-/* #navBar,
-#navBarMenu {
-  width: 100%;
-  display: none;
-}
-
-#navBarMenu {
-  padding: 0;
-  display: flex;
-  padding: 0 2rem;
-  justify-content: space-between;
-} */
-
 @media (min-width: 1024px) {
   #header {
     width: 100%;
@@ -126,9 +118,12 @@
   }
 
   #landerzTitle {
-    bottom: -2rem;
+    width: 100%;
+    bottom: -1rem;
+    font-size: 2rem;
     padding-left: 0;
     position: absolute;
+    background-color: #fff;
   }
 
   #navigation {
@@ -148,13 +143,14 @@
     display: flex;
     position: initial;
     background: transparent;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   #menu li {
     color: black;
     padding: 10px 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    margin: 0 1rem;
   }
 
   #menuToggle {
