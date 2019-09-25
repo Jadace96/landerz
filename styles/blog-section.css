@@ -23,6 +23,11 @@
   margin-right: 0.7rem;
 }
 
+#blogTextInfoContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 @media (min-width: 1024px) {
   #blog {
@@ -38,7 +43,7 @@
     position: absolute;
   }
 
-  #blogTextInfoContent  {
+  #blogTextInfoContent {
     max-width: 50%;
     padding-top: 7%;
   }

@@ -67,7 +67,7 @@
 #menuToggle input:checked ~ span {
   opacity: 1;
   background: #232323;
-  transform: rotate(50deg) translate(-2px, -4px);
+  transform: rotate(50deg) translate(-1px, -4px);
 }
 
 #menuToggle span:nth-last-child(3) {

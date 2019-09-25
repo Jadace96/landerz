@@ -76,8 +76,8 @@ input[type="search"] {
 /**** Responsive font sizes ****/
 
 
-a:focus {
-  outline: thin dotted;
+a:focus, input:focus, textarea:focus {
+  outline: none;
 }
 
 a,
@@ -111,15 +111,11 @@ p {
 
 section {
   padding: 1rem;
-  max-width: 100%;
-  margin-top: 0.2rem;
+  max-width: 50rem;
+  margin: 0.2rem auto 3rem;
 }
 
 @media (min-width: 1024px) {
-  p {
-    text-align: left;
-  }
-
   img {
     max-width: 50% !important;
   }

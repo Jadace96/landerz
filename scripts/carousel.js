@@ -1,12 +1,12 @@
 const userPhoto = {
   "1": {
-    src: "../assets/images/person_1.jpg"
+    src: "./assets/images/person_1.jpg"
   },
   "2": {
-    src: "../assets/images/person_2.jpg"
+    src: "./assets/images/person_2.jpg"
   },
   "3": {
-    src: "../assets/images/person_3.jpg"
+    src: "./assets/images/person_3.jpg"
   }
 };
 

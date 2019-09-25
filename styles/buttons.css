@@ -8,18 +8,26 @@
   border-radius: 2rem;
   padding: .7rem 1.5rem;
   max-width: fit-content;
+  min-width: fit-content;
   background-color: #45d2b5;
 }
 
 .learn-more-text-button {
   border: none;
   outline: none;
-  background: none;
+  cursor: pointer;
   color: #26dcc4;
   margin: 1.5rem 0;
+  background: none;
   font-size: 1.1rem;
   line-height: 1.6rem;
   letter-spacing: 0.3px;
+}
+
+#submitFormButtonInputContainer {
+  margin-left: 0;
+  margin: 2rem auto;
+  justify-content: center;
 }
 
 @media (min-width: 1024px) {

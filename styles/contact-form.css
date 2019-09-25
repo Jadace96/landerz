@@ -3,7 +3,7 @@
 	background-color: #fff;
 }
 
-h4 {
+#contactForm h3 {
 	padding: 1rem 0 2rem;
 }
 
@@ -27,14 +27,51 @@ h4 {
 	min-width: fit-content;
 }
 
-#textAreaMessage {
+textarea {
 	min-height: 3rem;
 	color:#8b9298bd;
 }
 
+contact-form {
+	margin-top: 2rem;
+}
+
 @media (min-width: 1024px) {
-	contact-form {
+	contact-form { /* Custom element */
 		width: 60%;
+	}
+
+	#contactForm {
+		padding: 2rem 2rem 0.1rem;
+	}
+
+	.input-container {
+		width: 93%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.label-form-input {
+		margin-bottom: 0.5rem;
+	}
+
+	.form-input {
+		width: 100%;
+		margin-left: 0;
+		padding: 0.5rem 1.5rem 0.5rem 0.3rem;
+	}
+
+	#firstNameInputContainer, #lastNameInputContainer {
+		width: 40%;
+	}
+
+	#firstNameInputContainer {
+		float: left;
+	}
+
+	#lastNameInputContainer {
+		float: right;
+		margin-right: 2rem;
 	}
 
 }
