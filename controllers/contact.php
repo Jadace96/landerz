@@ -1,6 +1,6 @@
 <?php
 ​
-require_once('../libraries/phpmailer.php');
+require_once ('../libraries/phpmailer.php');
 $mail     = new PHPMailer();
 $firstName   = $_POST['firstName'];
 $email    = $_POST['email'];
@@ -18,7 +18,7 @@ if (!empty($firstName) && !empty($email) ) {
 ​
 	$mail->FromName = $firstName;
 	
-	$mail->AddAddress("vlarenas@modyo.com", 'Email test Jorge Daniel ');
+	$mail->AddAddress("vlarenas@modyo.com", 'Email test Jorge Daniel');
 	
 	$mail->Subject = $subject;
 	$mail->Body    = $bodytext;
