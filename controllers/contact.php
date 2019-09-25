@@ -1,6 +1,6 @@
 <?php
 ​
-require_once ('../libraries/phpmailer.php');
+require_once('../libraries/phpmailer.php');
 $mail     = new PHPMailer();
 $firstName   = $_POST['firstName'];
 $email    = $_POST['email'];
