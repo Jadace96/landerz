@@ -117,6 +117,7 @@ section {
 
 @media (min-width: 1024px) {
   img {
+    max-height: 30rem;
     max-width: 50% !important;
   }
 

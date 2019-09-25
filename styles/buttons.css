@@ -9,6 +9,8 @@
   padding: .7rem 1.5rem;
   max-width: fit-content;
   min-width: fit-content;
+  max-width: -moz-fit-content;
+  min-width: -moz-fit-content;
   background-color: #45d2b5;
 }
 

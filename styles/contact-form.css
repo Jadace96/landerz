@@ -25,6 +25,7 @@
 	width: 30%;
 	font-size: 0.9rem;
 	min-width: fit-content;
+	min-width: -moz-fit-content;
 }
 
 textarea {
