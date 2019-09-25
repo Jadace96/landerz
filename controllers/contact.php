@@ -1,5 +1,5 @@
-	<?php
-
+<?php
+​
 require_once ('../libraries/phpmailer.php');
 $mail     = new PHPMailer();
 $firstName   = $_POST['firstName'];
@@ -7,38 +7,34 @@ $email    = $_POST['email'];
 $lastName = $_POST['lastName'];
 $subject  = $_POST['subject'];
 $textAreaMessage  = $_POST['textAreaMessage'];
-
-if (!empty($firstName) && !empty($email) && !empty($lastName) && !empty($textAreaMessage)) {
+​
+if (!empty($firstName) && !empty($email) ) {
 	$mail->isHTML(false);
-
+​
 	$bodytext = "First name: ".$firstName."\r\n".
 	"Last name: ".$lastName." \r\n".
 	"Email: ".$email." \r\n".
 	"Mensaje: ".$textAreaMessage;
-
+​
 	$mail->FromName = $firstName;
 	
-	$mail->AddAddress("jadace96@gmail.com", 'Email testing');
+	$mail->AddAddress("vlarenas@modyo.com", 'Email test Jorge Daniel ');
 	
 	$mail->Subject = $subject;
 	$mail->Body    = $bodytext;
-
-
+​
 	if ($mail->Send()) {
 		echo '<script>
-			alert("Se Envio su correo Correctamente.");
+			alert("Mail sended successfully");
 			window.history.go(-1);
 		</script>';
 	} else {
-		echo '<script>
-			alert("Hubo un error, Intentalo nuevamente.");
-			window.history.go(-1);
-		</script>';
+		echo '<script>alert("An error has occurred, Retry.");</script>';
 	}
 } else {
 	echo '<script>
-				alert("Alguno de los campos estan vacios, Intentelo de nuevo.");
-				window.history.go(-1);
-			</script>';
+					alert("Some fields are empty, try again");
+					window.history.go(-1);
+				</script>';
 }
 ?>

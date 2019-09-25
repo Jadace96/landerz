@@ -59,3 +59,17 @@
 .active-pager {
   background-color: #45d2b5;
 }
+
+@media (min-width: 1024px) {
+  .carouselContainer {
+    padding-top: 2rem;
+  }
+
+  .carousel-paragraph {
+    width: 50%;
+  }
+  
+  .carousel-pager-container {
+    padding-bottom: 2rem;
+  }
+}

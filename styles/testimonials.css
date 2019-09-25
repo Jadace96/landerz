@@ -2,3 +2,9 @@
   padding: 1rem;
   max-width: 100%;
 }
+
+@media (min-width: 1024px) {
+  #testimonials {  
+    padding: 1rem 0;    
+  }
+}
