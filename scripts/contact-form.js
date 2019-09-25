@@ -54,7 +54,7 @@ class ContactForm extends HTMLElement {
     }
     return `
     <input class="${type === "submit" ? "primary-button" : "form-input"}" 
-      type="${type}" name="${label}" value="${value}" id="${id}">
+      type="${type}" name="${id}" value="${value}" id="${id}">
     `;
   }
 
@@ -68,7 +68,7 @@ class ContactForm extends HTMLElement {
     );
 
     this.innerHTML += `
-      <form id="contactForm" action="" method="post">
+      <form id="contactForm" action="../controllers/contact.php" method="post">
         <h4>Contact Form</h4>
         ${formFields.join(" ")}                
       </form>

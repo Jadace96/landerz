@@ -25,14 +25,21 @@
 
 
 @media (min-width: 1024px) {
+  #blog {
+    padding-bottom: 0;
+    align-items: initial;
+  }
+
   #blog .section-bold-title {
-    top: 20%;
-    left: 40%;
+    top: 10%;
+    right: 0;
     width: 50%;
+    text-align: left;
     position: absolute;
   }
 
   #blogTextInfoContent  {
     max-width: 50%;
+    padding-top: 7%;
   }
 }

@@ -14,7 +14,20 @@
 }
 
 @media (min-width: 1024px) {
+  #aboutUs {
+    padding: 2rem 6rem;
+    justify-content: space-between;
+  }
+
+  #aboutUsImg {
+    max-width: 40% !important;
+  }
+
   #aboutUsContainer {
     max-width: 50%;
+  }
+
+  p {
+    padding-right: 6rem;
   }
 }
